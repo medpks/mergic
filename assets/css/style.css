@@ -1,0 +1,137 @@
+/* CSS for styling the sortable list and other elements */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    flex: 1;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.sortable-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sortable-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    cursor: move;
+}
+
+.sortable-list li:last-child {
+    border-bottom: none;
+}
+
+.remove-button {
+    margin-left: 10px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.ghost {
+    opacity: 0.4;
+    background-color: #ddd;
+}
+
+.download-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.drop-area.dragover {
+    background-color: #f0f0f0;
+}
+
+.pdf-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.pdf-preview {
+    position: relative;
+    margin: 2px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.pdf-preview:hover {
+    border: 1px solid #ccc;
+}
+
+.pdf-preview canvas {
+    width: 100px;
+    height: 140px;
+}
+
+.delete-button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: red;
+    color: white;
+    border: none;
+   
+    cursor: pointer;
+    display: none;
+}
+
+.pdf-preview:hover .delete-button {
+    display: block;
+}

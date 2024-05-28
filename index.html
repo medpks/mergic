@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include SortableJS via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <!-- Include PDF.js via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <div class="container mx-auto p-4 bg-white shadow-md rounded">
+        <h1 class="text-2xl font-bold mb-4">PDF Merger</h1>
+        <div id="drop-area" class="p-4 border-dashed border-2 border-gray-400 mb-4 w-full text-center cursor-pointer">
+            Drag & Drop PDF files here or click to select
+        </div>
+        <input type="file" id="file-input" multiple accept="application/pdf" class="hidden">
+        <button id="file-button" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Add PDF Files</button>
+        <div id="pdf-preview-container" class="flex flex-wrap justify-start gap-4"></div>
+        <button id="merge-button" class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Merge PDFs</button>
+        <div id="download-link" class="mt-4"></div>
+    </div>
+
+    <!-- Include your custom JavaScript file -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

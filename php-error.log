@@ -1,0 +1,12 @@
+[27-May-2024 15:33:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'FPDF' not found in C:\xampp\htdocs\mergic\vendor\setasign\fpdi\src\FpdfTpl.php:18
+Stack trace:
+#0 C:\xampp\htdocs\mergic\vendor\composer\ClassLoader.php(571): include()
+#1 C:\xampp\htdocs\mergic\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('setasign\\Fpdi\\F...')
+#3 C:\xampp\htdocs\mergic\vendor\setasign\fpdi\src\Fpdi.php(23): spl_autoload_call('setasign\\Fpdi\\F...')
+#4 C:\xampp\htdocs\mergic\vendor\composer\ClassLoader.php(571): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\mergic\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#6 [internal function]: Composer\Autoload\ClassLoader->loadClass('setasign\\Fpdi\\F...')
+#7 C:\xampp\htdocs\mergic\merge.php(27): spl_autoload_call('setasign\\Fpdi\\F...')
+#8 {main}
+  thrown in C:\xampp\htdocs\mergic\vendor\setasign\fpdi\src\FpdfTpl.php on line 18
